@@ -1,0 +1,466 @@
+[
+  {
+    "country": "아르헨티나",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "호주",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "오스트리아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "벨라루스",
+    "NSG": true,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": false
+  },
+  {
+    "country": "벨기에",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "브라질",
+    "NSG": true,
+    "AG": false,
+    "MTCR": true,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "불가리아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "캐나다",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "중국",
+    "NSG": true,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "크로아티아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "키프로스",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": false,
+    "CA": false
+  },
+  {
+    "country": "체코",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "덴마크",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "에스토니아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "EU",
+    "NSG": false,
+    "AG": true,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "핀란드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "프랑스",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "독일",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "그리스",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "헝가리",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "아이슬란드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": false,
+    "CA": false
+  },
+  {
+    "country": "인도",
+    "NSG": false,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "아일랜드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "대만",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "이탈리아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "말레이시아",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "일본",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "카자흐스탄",
+    "NSG": true,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": false
+  },
+  {
+    "country": "싱가포르",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "대한민국",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "라트비아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "홍콩",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "리투아니아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "태국",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "룩셈부르크",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "아랍에미리트",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "몰타",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "사우디아라비아",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "멕시코",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "네덜란드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "뉴질랜드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "노르웨이",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "폴란드",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "이스라엘",
+    "NSG": false,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": true
+  },
+  {
+    "country": "포르투갈",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "루마니아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "러시아",
+    "NSG": true,
+    "AG": false,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "세르비아",
+    "NSG": true,
+    "AG": false,
+    "MTCR": false,
+    "WA": false,
+    "CA": false
+  },
+  {
+    "country": "슬로바키아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "슬로베니아",
+    "NSG": true,
+    "AG": true,
+    "MTCR": false,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "남아프리카공화국",
+    "NSG": true,
+    "AG": false,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "스페인",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "스웨덴",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": false
+  },
+  {
+    "country": "스위스",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "터키",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "우크라이나",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "영국",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  },
+  {
+    "country": "미국",
+    "NSG": true,
+    "AG": true,
+    "MTCR": true,
+    "WA": true,
+    "CA": true
+  }
+]

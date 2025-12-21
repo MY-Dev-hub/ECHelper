@@ -1,0 +1,176 @@
+[
+  {
+    "country": "태국",
+    "agreementNumber": "제2608호",
+    "effectiveDate": "2025-04-22",
+    "signDate": "2025-03-21"
+  },
+  {
+    "country": "미국",
+    "agreementNumber": "제2262호",
+    "effectiveDate": "2015-11-25",
+    "signDate": "2015-06-15"
+  },
+  {
+    "country": "핀란드",
+    "agreementNumber": "제2217호",
+    "effectiveDate": "2015-01-01",
+    "signDate": "2013-10-23"
+  },
+  {
+    "country": "헝가리",
+    "agreementNumber": "제2170호",
+    "effectiveDate": "2014-01-18",
+    "signDate": "2013-10-18"
+  },
+  {
+    "country": "멕시코",
+    "agreementNumber": "제2140호",
+    "effectiveDate": "2013-07-14",
+    "signDate": "2012-06-17"
+  },
+  {
+    "country": "사우디아라비아",
+    "agreementNumber": "제2101호",
+    "effectiveDate": "2012-08-14",
+    "signDate": "2011-11-15"
+  },
+  {
+    "country": "인도",
+    "agreementNumber": "제2061호",
+    "effectiveDate": "2011-10-12",
+    "signDate": "2011-07-25"
+  },
+  {
+    "country": "일본",
+    "agreementNumber": "제2074호",
+    "effectiveDate": "2012-01-21",
+    "signDate": "2010-12-20"
+  },
+  {
+    "country": "아랍에미리트",
+    "agreementNumber": "제1988호",
+    "effectiveDate": "2010-01-12",
+    "signDate": "2009-06-22"
+  },
+  {
+    "country": "요르단",
+    "agreementNumber": "제1946호",
+    "effectiveDate": "2009-05-05",
+    "signDate": "2008-12-01"
+  },
+  {
+    "country": "인도네시아",
+    "agreementNumber": "제2063호",
+    "effectiveDate": "2011-10-24",
+    "signDate": "2006-12-04"
+  },
+  {
+    "country": "카자흐스탄",
+    "agreementNumber": "제2027호",
+    "effectiveDate": "2010-08-23",
+    "signDate": "2004-09-20"
+  },
+  {
+    "country": "루마니아",
+    "agreementNumber": "제1682호",
+    "effectiveDate": "2004-09-06",
+    "signDate": "2004-02-03"
+  },
+  {
+    "country": "칠레",
+    "agreementNumber": "제1805호",
+    "effectiveDate": "2006-09-03",
+    "signDate": "2002-11-12"
+  },
+  {
+    "country": "이집트",
+    "agreementNumber": "제1599호",
+    "effectiveDate": "2002-06-24",
+    "signDate": "2001-08-14"
+  },
+  {
+    "country": "우크라이나",
+    "agreementNumber": "제1858호",
+    "effectiveDate": "2007-06-11",
+    "signDate": "2001-07-23"
+  },
+  {
+    "country": "체코",
+    "agreementNumber": "제1563호",
+    "effectiveDate": "2001-06-01",
+    "signDate": "2001-03-16"
+  },
+  {
+    "country": "브라질",
+    "agreementNumber": "제1741호",
+    "effectiveDate": "2005-07-25",
+    "signDate": "2001-01-18"
+  },
+  {
+    "country": "러시아",
+    "agreementNumber": "제1495호",
+    "effectiveDate": "1999-10-08",
+    "signDate": "1999-05-28"
+  },
+  {
+    "country": "터키",
+    "agreementNumber": "제1487호",
+    "effectiveDate": "1999-06-04",
+    "signDate": "1998-10-26"
+  },
+  {
+    "country": "베트남",
+    "agreementNumber": "제1364호",
+    "effectiveDate": "1997-01-06",
+    "signDate": "1996-11-20"
+  },
+  {
+    "country": "아르헨티나",
+    "agreementNumber": "제1421호",
+    "effectiveDate": "1997-09-19",
+    "signDate": "1996-09-09"
+  },
+  {
+    "country": "중국",
+    "agreementNumber": "제1269호",
+    "effectiveDate": "1995-02-11",
+    "signDate": "1994-10-31"
+  },
+  {
+    "country": "영국",
+    "agreementNumber": "1073호",
+    "effectiveDate": "1991-11-27",
+    "signDate": "1991-11-27"
+  },
+  {
+    "country": "독일",
+    "agreementNumber": "제879호",
+    "effectiveDate": "1986-04-11",
+    "signDate": "1986-04-11"
+  },
+  {
+    "country": "프랑스",
+    "agreementNumber": "제742호",
+    "effectiveDate": "1981-04-04",
+    "signDate": "1981-04-04"
+  },
+  {
+    "country": "벨기에",
+    "agreementNumber": "제738호",
+    "effectiveDate": "1981-03-03",
+    "signDate": "1981-03-03"
+  },
+  {
+    "country": "호주",
+    "agreementNumber": "제683호",
+    "effectiveDate": "1979-05-02",
+    "signDate": "1979-05-02"
+  },
+  {
+    "country": "캐나다",
+    "agreementNumber": "제563호",
+    "effectiveDate": "1976-01-26",
+    "signDate": "1976-01-26"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "key": "0",
+    "title": "0 - Nuclear",
+    "icon": "⚛️",
+    "children": [
+      {
+        "key": "0A",
+        "title": "0A - System, Equipment and Components",
+        "children": []
+      },
+      {
+        "key": "0B",
+        "title": "0B - Test, Inspection and Production Equipment",
+        "children": []
+      },
+      {
+        "key": "0C",
+        "title": "0C - Materials",
+        "children": []
+      },
+      {
+        "key": "0D",
+        "title": "0D - Software",
+        "children": []
+      },
+      {
+        "key": "0E",
+        "title": "0E - Technology",
+        "children": []
+      }
+    ]
+  },
+  {
+    "key": "1",
+    "title": "1 - Special Materials",
+    "icon": "🔬",
+    "children": [
+      {
+        "key": "1A",
+        "title": "1A - System, Equipment and Components",
+        "children": []
+      },
+      {
+        "key": "1B",
+        "title": "1B - Test, Inspection and Production Equipment",
+        "children": []
+      },
+      {
+        "key": "1C",
+        "title": "1C - Materials",
+        "children": []
+      },
+      {
+        "key": "1D",
+        "title": "1D - Software",
+        "children": []
+      },
+      {
+        "key": "1E",
+        "title": "1E - Technology",
+        "children": []
+      }
+    ]
+  },
+  {
+    "key": "2",
+    "title": "2 - Materials Processing",
+    "icon": "🔬",
+    "children": [
+      {
+        "key": "2A",
+        "title": "2A - System, Equipment and Components",
+        "children": []
+      },
+      {
+        "key": "2B",
+        "title": "2B - Test, Inspection and Production Equipment",
+        "children": []
+      },
+      {
+        "key": "2D",
+        "title": "2D - Software",
+        "children": []
+      },
+      {
+        "key": "2E",
+        "title": "2E - Technology",
+        "children": []
+      }
+    ]
+  },
+  {
+    "key": "3",
+    "title": "3 - Electronics",
+    "icon": "🔬",
+    "children": [
+      {
+        "key": "3A",
+        "title": "3A - System, Equipment and Components",
+        "children": []
+      },
+      {
+        "key": "3D",
+        "title": "3D - Software",
+        "children": []
+      },
+      {
+        "key": "3E",
+        "title": "3E - Technology",
+        "children": []
+      }
+    ]
+  },
+  {
+    "key": "6",
+    "title": "6 - Sensors and Lasers",
+    "icon": "🔬",
+    "children": [
+      {
+        "key": "6A",
+        "title": "6A - System, Equipment and Components",
+        "children": []
+      },
+      {
+        "key": "6E",
+        "title": "6E - Technology",
+        "children": []
+      }
+    ]
+  }
+]
