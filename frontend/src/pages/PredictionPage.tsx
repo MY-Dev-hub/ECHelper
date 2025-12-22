@@ -4,6 +4,7 @@ import PredictionForm from '../components/prediction/PredictionForm';
 import PredictionResult from '../components/prediction/PredictionResult';
 import SimilarCasesList from '../components/prediction/SimilarCasesList';
 import { findSimilarDocuments } from '../utils/tfidf';
+import { predictStrategic } from '../utils/modelPredictor';
 
 const { Title } = Typography;
 
@@ -27,54 +28,59 @@ const PredictionPage: React.FC = () => {
     loadData();
   }, []);
 
-  const handlePredict = (formData: any) => {
-  // 1. 예측 결과 (임시 - AI 모델 없음)
-  const randomConfidence = 50 + Math.random() * 40;
-  const isStrategic = Math.random() > 0.4;
-  
-  const result = {
-    isStrategic: isStrategic,
-    confidence: randomConfidence,
-    eccn: isStrategic ? ['0A001', '0E001', '1C234', '2B231'][Math.floor(Math.random() * 4)] : 'N/A',
-    classType: isStrategic ? ['E1', 'E2', 'E3', 'A', 'B'][Math.floor(Math.random() * 5)] : 'N/A',
-    explanation: isStrategic 
-      ? '입력된 내용을 분석한 결과, 원자력/방사선 관련 전략물자로 분류될 가능성이 높습니다.'
-      : '입력된 내용을 분석한 결과, 일반 상업용 품목으로 비전략물자로 판단됩니다.',
-  };
-  setPredictionResult(result);
-
-  // 2. 유사 사례 찾기 (TF-IDF)
-  const queryText = `${formData.title} ${formData.description || ''} ${formData.purpose || ''} ${formData.application || ''}`;
-  
-  // 🔥 최소 길이 체크
-  if (queryText.trim().length < 3) {
-    setSimilarCases([]);
-    message.warning('더 구체적인 내용을 입력해주세요. (최소 3자 이상)');
-    return;
+ const handlePredict = async (formData: any) => {
+  try {
+    // 🔥 AI 모델로 예측
+    const aiResult = await predictStrategic(
+      formData.title,
+      formData.description || '',
+      formData.purpose || '',
+      formData.application || ''
+    );
+    
+    const result = {
+      isStrategic: aiResult.isStrategic,
+      confidence: aiResult.confidence,
+      eccn: aiResult.isStrategic ? ['0A001', '0E001', '1C234', '2B231'][Math.floor(Math.random() * 4)] : 'N/A',
+      classType: aiResult.isStrategic ? ['E1', 'E2', 'E3', 'A', 'B'][Math.floor(Math.random() * 5)] : 'N/A',
+      explanation: aiResult.isStrategic 
+        ? '입력된 내용을 분석한 결과, 원자력/방사선 관련 전략물자로 분류될 가능성이 높습니다.'
+        : '입력된 내용을 분석한 결과, 일반 상업용 품목으로 비전략물자로 판단됩니다.',
+    };
+    
+    setPredictionResult(result);
+    
+    // 유사 사례 검색 (기존 로직)
+    const queryText = `${formData.title} ${formData.description || ''} ${formData.purpose || ''} ${formData.application || ''}`;
+    
+    if (queryText.trim().length < 3) {
+      setSimilarCases([]);
+      message.warning('더 구체적인 내용을 입력해주세요. (최소 3자 이상)');
+      return;
+    }
+    
+    const similarResults = findSimilarDocuments(queryText, allData, 5);
+    const filteredResults = similarResults.filter(result => result.similarity > 0.05);
+    
+    if (filteredResults.length === 0) {
+      setSimilarCases([]);
+      message.info('유사한 과거 이력을 찾을 수 없습니다. 더 자세한 설명을 입력해보세요.');
+      return;
+    }
+    
+    const cases = filteredResults.map(result => ({
+      ...allData[result.itemId],
+      similarity: result.similarity,
+      rank: filteredResults.indexOf(result) + 1
+    }));
+    
+    setSimilarCases(cases);
+    message.success(`${cases.length}개의 유사 사례를 찾았습니다.`);
+    
+  } catch (error) {
+    console.error('예측 중 오류:', error);
+    message.error('예측 중 오류가 발생했습니다.');
   }
-  
-  const similarResults = findSimilarDocuments(queryText, allData, 5);
-  
-  // 🔥 유사도가 너무 낮으면 필터링
-  const filteredResults = similarResults.filter(result => result.similarity > 0.05);
-  
-  if (filteredResults.length === 0) {
-    setSimilarCases([]);
-    message.info('유사한 과거 이력을 찾을 수 없습니다. 더 자세한 설명을 입력해보세요.');
-    return;
-  }
-  
-  // 🔥 filteredResults 사용 (similarResults 아님!)
-  const cases = filteredResults.map(result => ({
-    ...allData[result.itemId],
-    similarity: result.similarity,
-    rank: filteredResults.indexOf(result) + 1
-  }));
-  
-  setSimilarCases(cases);
-  
-  // 🔥 성공 메시지
-  message.success(`${cases.length}개의 유사 사례를 찾았습니다.`);
 };
 
   return (

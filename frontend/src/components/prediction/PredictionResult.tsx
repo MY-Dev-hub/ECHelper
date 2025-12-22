@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Descriptions, Tag, Progress, Empty, Space } from 'antd';
-import { CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
+import { Card, Descriptions, Tag, Progress, Empty, Space, Alert } from 'antd';
+import { CheckCircleOutlined, CloseCircleOutlined, ExperimentOutlined } from '@ant-design/icons';
 
 interface PredictionResultProps {
   result: {
@@ -31,6 +31,28 @@ const PredictionResult: React.FC<PredictionResultProps> = ({ result }) => {
 
   return (
     <Card title="예측 결과">
+      {/* 🔥 모델 정보 배너 */}
+      <Alert
+        message={
+          <span>
+            <ExperimentOutlined /> 현재 사용 중인 AI 모델
+          </span>
+        }
+        description={
+          <div style={{ fontSize: 12 }}>
+            <strong>모델:</strong> LSTM (Long Short-Term Memory)<br/>
+            <strong>학습 데이터:</strong> 2,300건<br/>
+            <strong>테스트 정확도:</strong> 72%<br/>
+            <em style={{ color: '#999' }}>
+              * 더 높은 정확도를 위해 BERT 모델로 업그레이드 예정 (목표: 97%)
+            </em>
+          </div>
+        }
+        type="info"
+        showIcon
+        style={{ marginBottom: 16 }}
+      />
+
       {/* 상단 요약 */}
       <div style={{ marginBottom: 24, padding: 16, background: '#fafafa', borderRadius: 8 }}>
         <Space size="large">
