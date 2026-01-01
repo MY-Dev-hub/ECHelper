@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form, Input, Button, Card } from 'antd';
 
 const { TextArea } = Input;
@@ -10,22 +10,47 @@ interface PredictionFormProps {
 const PredictionForm: React.FC<PredictionFormProps> = ({ onPredict }) => {
   const [form] = Form.useForm();
 
+  // Load saved form data from localStorage on mount
+  useEffect(() => {
+    const savedData = localStorage.getItem('echelper_prediction_form');
+    if (savedData) {
+      try {
+        const formData = JSON.parse(savedData);
+        form.setFieldsValue(formData);
+      } catch (error) {
+        console.error('Failed to load saved form data:', error);
+      }
+    }
+  }, [form]);
+
+  // Save form data to localStorage whenever it changes
+  const handleValuesChange = (_: any, allValues: any) => {
+    try {
+      localStorage.setItem('echelper_prediction_form', JSON.stringify(allValues));
+    } catch (error) {
+      console.error('Failed to save form data:', error);
+    }
+  };
+
   const handleSubmit = (values: any) => {
     onPredict(values);
   };
 
   const handleClear = () => {
     form.resetFields();
+    // Clear localStorage when form is cleared
+    localStorage.removeItem('echelper_prediction_form');
   };
 
   return (
     <Card title="입력 정보"
       bodyStyle={{ padding: 10 }}>
-      <Form 
+      <Form
         form={form}
         layout="vertical"
         className="compact-form"
         onFinish={handleSubmit}
+        onValuesChange={handleValuesChange}
       >
         <Form.Item style={{ marginTop: 0 }}
           label="Title"
