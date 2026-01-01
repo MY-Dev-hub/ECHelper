@@ -158,8 +158,6 @@ MIT License
 ## 👥 제작
 
 - **AI Model**: KoBERT (SKT)
-- **Development**: MY-Dev-hub
-- **Documentation**: Claude Code
 
 ---
 
